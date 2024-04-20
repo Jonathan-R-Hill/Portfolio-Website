@@ -43,6 +43,15 @@ a:visited {
   color: black;
 }
 
+#meContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+#profiles,
+#hobbies {
+  flex: 0 0 45%;
+}
 
 #favMovies ul {
   display: flex;
@@ -53,7 +62,6 @@ a:visited {
 
 #favMovies li {
   flex-basis: calc(33.33% - 20px);
-  /* Adjust the width based on the number of items per line */
   margin-bottom: 20px;
   list-style: none;
 }
@@ -63,14 +71,20 @@ a:visited {
   height: auto;
 }
 
-#meContainer {
+#favGames ul {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  /* Add this to create space between the two divs */
+  padding: 0;
 }
 
-#profiles,
-#hobbies {
-  flex: 0 0 45%;
-  /* Add this to limit the width of each div */
+#favGames li {
+  flex-basis: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  list-style: none;
+}
+
+#favGames img {
+  width: 80%;
+  height: auto;
 }
