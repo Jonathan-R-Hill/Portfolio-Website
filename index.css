@@ -68,23 +68,74 @@ header nav ul li a {
     font-size: 44px;
 }
 
+a {
+    color: dodgerblue;
+}
+
 /* ---------- Section Content ---------- */
+/* Base Styles for Larger Screens */
 #hero .content {
     position: fixed;
     text-align: center;
     top: 50px;
     right: 100px;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.2);
     padding: 30px;
-    width: 700px;
-    max-width: 700px;
+    width: 650px;
+    max-width: 650px;
     margin: 0;
     color: white;
     z-index: 1000;
-
-    /* ----- text ----- */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+/* Responsive Styles for Mobile Screens */
+@media (max-width: 768px) {
+    #hero .overlay {
+        top: 20px;
+        left: 10px;
+        padding: 30px;
+        width: auto;
+        max-width: 90%;
+        text-align: left;
+    }
+
+    #hero .content {
+        position: static;
+        top: auto;
+        right: auto;
+        left: 10px;
+        margin: 20px 0;
+        width: auto;
+        max-width: 90%;
+        padding: 40px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    #hero h1 {
+        font-size: 26px;
+    }
+}
+
+/* for Very Small Screens */
+@media (max-width: 480px) {
+    #hero .overlay {
+        top: 30px;
+        left: 5px;
+        padding: 15px;
+        max-width: 95%;
+    }
+
+    #hero .content {
+        padding: 45px;
+        max-width: 95%;
+    }
+
+    #hero h1 {
+        font-size: 26px;
+    }
 }
