@@ -1,44 +1,93 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 16px;
-  color: aliceblue;
-  background-color: rgb(43, 42, 41);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #000000;
 }
 
-h1,
-h3 {
-  text-decoration: underline;
+/* ---------- Nav Bar ---------- */
+header {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 900;
 }
 
-a,
-a:visited {
-  color: rgb(0, 187, 255);
+/* The rest remains unchanged */
+header nav ul {
+    list-style: none;
+    text-align: center;
 }
 
-.navbar {
-  background-color: #333;
-  overflow: hidden;
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
-.nav-links {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.nav-links li {
-  float: left;
+/* ---------- Content Section ---------- */
+#hero {
+    position: relative;
+    margin-top: 5px;
+    text-align: center;
+    color: white;
+    background: url('./Images/Background.jpg') no-repeat center center/cover;
+    min-height: 150vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.nav-links a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
+/* ---------- Name ---------- */
+#hero .overlay {
+    position: fixed;
+    top: 40px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    height: auto;
+    width: auto;
+    max-width: auto;
+    color: white;
 }
 
-.nav-links a:hover {
-  background-color: #ddd;
-  color: black;
+#hero h1 {
+    font-size: 44px;
+}
+
+/* ---------- Section Content ---------- */
+#hero .content {
+    position: fixed;
+    text-align: center;
+    top: 50px;
+    right: 100px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    width: 600px;
+    max-width: 600px;
+    margin: 0;
+    color: white;
+    z-index: 1000;
+
+    /* ----- text ----- */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }

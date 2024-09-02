@@ -2,35 +2,32 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home Page</title>
-  <link rel="stylesheet" href="index.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Biography Page</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#AboutMe">About Me</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <nav class="navbar">
-    <ul class="nav-links">
-      <li><a href="./index.html">Home</a></li>
-      <li><a href="./About Me/aboutMe.html">About Me</a></li>
-      <li><a href="./Early Projects/main.html">Early Projects</a></li>
-      <li><a href="./Ciphers/main.html">Ciphers</a></li>
-    </ul>
-  </nav>
-
-  <h1>Welcome to my first website</h1>
-  <hr />
-
-  <p>
-    Here you can see projects I have made as I practice & learn<br>
-    Find more information about me<br>
-    Please use the navigation bar at the top of the screen to get around :)<br>
-  </p>
+    <section id="hero">
+        <div class="overlay">
+            <h1>Jonathan Hill</h1>
+        </div>
+        <div id="content" class="content"></div> <!-- This div will hold the content based on the selected section -->
+    </section>
 
 
-
-  <script src="./index.js"></script>
+    <script src="./index.js"></script>
 </body>
 
 </html>
