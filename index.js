@@ -1,4 +1,4 @@
-// index.js
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -43,6 +43,7 @@ function getAboutMeContent() {
     `
 }
 
+// TODO
 function getMediaContent() {
     return `
         <h1>Media</h1>
@@ -50,6 +51,7 @@ function getMediaContent() {
     `;
 }
 
+// TODO
 function getContactContent() {
     return `
         <h1>Contact</h1>

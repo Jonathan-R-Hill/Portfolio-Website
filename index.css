@@ -23,7 +23,6 @@ header {
     z-index: 900;
 }
 
-/* The rest remains unchanged */
 header nav ul {
     list-style: none;
     text-align: center;
@@ -43,15 +42,13 @@ header nav ul li a {
 /* ---------- Content Section ---------- */
 #hero {
     position: relative;
-    margin-top: 5px;
+    margin-top: 10px;
     text-align: center;
     color: white;
     background: url('./Images/Background.jpg') no-repeat center center/cover;
-    min-height: 150vh;
+    background-size: contain;
+    min-height: 80vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
 /* ---------- Name ---------- */
