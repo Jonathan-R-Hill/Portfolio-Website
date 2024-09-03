@@ -7,8 +7,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         const contentDiv = document.getElementById('content');
 
         // Set the content of the conentDiv based on the clicked section
-        if (targetId === 'AboutMe') { contentDiv.innerHTML = getAboutMeContent(); }
-        else if (targetId === 'media') { contentDiv.innerHTML = getMediaContent(); }
+        if (targetId === 'aboutMe') { contentDiv.innerHTML = getAboutMeContent(); }
+        else if (targetId === 'gameDev') { contentDiv.innerHTML = getDevContent(); }
         else if (targetId == 'contact') { contentDiv.innerHTML = getContactContent(); }
 
         window.scrollTo({
@@ -21,7 +21,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 function getAboutMeContent() {
     return `
-        <h1>About Me</h1>
+        <h1>About Me</h1><br>
         <p>
             I'm currently a second-year student at Teesside University<br>
             Studying Computer Science.<br>
@@ -46,9 +46,9 @@ function getAboutMeContent() {
 }
 
 // TODO
-function getMediaContent() {
+function getDevContent() {
     return `
-        <h1>Media</h1>
+        <h1>Game Development</h1>
         <p>TODO</p>
     `;
 }
