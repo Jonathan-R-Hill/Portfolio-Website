@@ -9,9 +9,7 @@ html,
 body {
     height: 100%;
     overflow-x: hidden;
-    /* Prevent horizontal scroll */
     overflow-y: hidden;
-    /* Allow vertical scrolling */
 }
 
 body {
@@ -59,9 +57,7 @@ header nav ul li a {
     min-height: 80vh;
     display: flex;
     flex-direction: column;
-    /* Ensure content can stack */
     padding-top: 60px;
-    /* Ensure content starts below the fixed header */
 }
 
 /* ---------- Name ---------- */
@@ -91,19 +87,16 @@ a {
     position: fixed;
     top: 60px;
     right: 0;
-    /* Position on the right edge */
     background: rgba(0, 0, 0, 0.3);
     padding: 30px;
     width: 650px;
     max-width: 650px;
     max-height: 90vh;
-    /* Limit height for scrolling */
     color: white;
     z-index: 1000;
     display: flex;
     flex-direction: column;
     overflow-y: auto;
-    /* Enable vertical scrolling */
 }
 
 /* Styles for Mobile Screens */
@@ -121,7 +114,7 @@ a {
         left: auto;
         margin: 0;
         padding: 40px;
-        max-width: 100%;
+        max-width: 90%;
         height: auto;
         max-height: 80vh;
         overflow-y: auto;
@@ -132,22 +125,30 @@ a {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 819px) {
+
+    html,
+    body {
+        overflow-y: auto;
+    }
+
     #hero .overlay {
-        top: 20px;
-        left: 10px;
-        max-width: 100%;
+        position: relative;
+        top: -80px;
+        left: 0;
+        max-width: 90%;
         text-align: left;
     }
 
     #hero .content {
-        position: static;
-        /* Static positioning for mobile */
-        margin: 20px 0;
-        max-width: 100%;
-        padding: 40px;
-        right: 0;
-        max-height: 80vh;
+        position: relative;
+        top: -60px;
+        margin: 5px 0;
+        max-width: 90%;
+        padding: 20px;
+        height: auto;
+        max-height: auto;
+        /* Adjust the height dynamically & grow */
         overflow-y: auto;
     }
 
@@ -158,17 +159,34 @@ a {
 
 /* for Very Small Screens */
 @media (max-width: 480px) {
+
+    html,
+    body {
+        overflow-y: auto;
+    }
+
     #hero .overlay {
-        top: 30px;
-        left: 5px;
-        padding: 15px;
-        max-width: 95%;
+        position: relative;
+        top: -100px;
+        left: 0;
+        max-width: 90%;
+        text-align: left;
     }
 
     #hero .content {
-        padding: 45px;
-        max-width: 100%;
-        max-height: 80vh;
-        overflow-y: auto;
+        position: relative;
+        top: -100px;
+        margin: 5px 0;
+        max-width: 90%;
+        padding: 20px;
+        height: auto;
+        max-height: auto;
+        /* Adjust the height dynamically & grow */
+        overflow-y: visible;
+        /* Enable scrolling */
+    }
+
+    #hero h1 {
+        font-size: 26px;
     }
 }
