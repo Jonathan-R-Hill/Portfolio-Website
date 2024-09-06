@@ -8,8 +8,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
         // Set the content of the conentDiv based on the clicked section
         if (targetId === 'aboutMe') { contentDiv.innerHTML = getAboutMeContent(); }
-        else if (targetId === 'gameDev') { contentDiv.innerHTML = getDevContent(); }
+        else if (targetId === 'gameDev') { contentDiv.innerHTML = ''; }
         else if (targetId == 'contact') { contentDiv.innerHTML = getContactContent(); }
+
+        updateLeftDiv(targetId);
 
         window.scrollTo({
             top: 0,
@@ -18,6 +20,20 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+
+function updateLeftDiv(targetId) {
+    const leftDiv = document.getElementById('overlay');
+
+    if (targetId === 'gameDev') {
+        leftDiv.innerHTML = getDevContentLeft();
+    }
+    else {
+        leftDiv.innerHTML = `
+            <h1>Jonathan Hill</h1>
+            <img src="./Images/fire.jpg" alt="Profile Image" style="width:250px; height:200px;" />
+        `
+    }
+}
 
 function getAboutMeContent() {
     return `
@@ -46,11 +62,13 @@ function getAboutMeContent() {
 }
 
 // TODO
-function getDevContent() {
+function getDevContentLeft() {
     return `
-        <h1>Game Development</h1>
-        <p>TODO</p>
-    `;
+        <h1>Development Logs</h1>
+        <ul>
+            <a href="#" onclick="loadDevLog1()">Development Log 1</a>
+        </ul>
+        `;
 }
 
 // TODO
