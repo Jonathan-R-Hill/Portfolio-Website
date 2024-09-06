@@ -116,11 +116,13 @@ a {
 
     #hero .content {
         position: static;
+        /* Static positioning for mobile */
         margin: 20px 0;
         max-width: 90%;
         padding: 40px;
         right: 0;
-        max-height: none;
+        max-height: 80vh;
+        overflow-y: auto;
     }
 
     #hero h1 {
@@ -140,6 +142,7 @@ a {
     #hero .content {
         padding: 45px;
         max-width: 95%;
-        max-height: none;
+        max-height: 80vh;
+        overflow-y: auto;
     }
 }
