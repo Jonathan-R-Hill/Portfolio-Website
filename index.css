@@ -28,7 +28,7 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 900;
+    z-index: 1100;
 }
 
 header nav ul {
@@ -58,7 +58,9 @@ header nav ul li a {
     display: flex;
     flex-direction: column;
     padding-top: 60px;
+    z-index: 1;
 }
+
 
 /* ---------- Name ---------- */
 #hero .overlay {
@@ -70,7 +72,6 @@ header nav ul li a {
     padding: 30px;
     color: white;
     z-index: 1000;
-    /* Make sure it's above other content */
 }
 
 #hero h1 {
@@ -108,6 +109,17 @@ a {
         text-align: left;
     }
 
+    #hero::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+    }
+
     #hero .content {
         position: absolute;
         right: 0;
@@ -132,6 +144,17 @@ a {
         overflow-y: auto;
     }
 
+    #hero::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+    }
+
     #hero .overlay {
         position: relative;
         top: -80px;
@@ -148,7 +171,6 @@ a {
         padding: 20px;
         height: auto;
         max-height: auto;
-        /* Adjust the height dynamically & grow */
         overflow-y: auto;
     }
 
@@ -163,6 +185,17 @@ a {
     html,
     body {
         overflow-y: auto;
+    }
+
+    #hero::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: -1;
     }
 
     #hero .overlay {
@@ -181,9 +214,7 @@ a {
         padding: 20px;
         height: auto;
         max-height: auto;
-        /* Adjust the height dynamically & grow */
         overflow-y: visible;
-        /* Enable scrolling */
     }
 
     #hero h1 {
