@@ -52,13 +52,69 @@ header nav ul li a {
     position: relative;
     text-align: center;
     color: white;
-    background: url('./Images/Background.jpg') no-repeat center center/cover;
-    background-size: contain;
-    min-height: 80vh;
     display: flex;
     flex-direction: column;
     padding-top: 60px;
     z-index: 1;
+}
+
+#background {
+    position: relative;
+    background: url('./Images/Background.jpg') no-repeat center center/cover;
+    background-size: contain;
+    z-index: 1;
+    display: flex;
+    min-height: 60vh;
+    animation: flicker 2s infinite;
+}
+
+/* Flickering keyframes */
+@keyframes flicker {
+    0% {
+        opacity: 0.85;
+        transform: scale(1);
+    }
+
+    10% {
+        opacity: 0.86;
+    }
+
+    20% {
+        opacity: 0.87;
+
+    }
+
+    30% {
+        opacity: 0.88;
+    }
+
+    40% {
+        opacity: 0.89;
+    }
+
+    50% {
+        opacity: 0.90;
+    }
+
+    60% {
+        opacity: 0.92;
+    }
+
+    70% {
+        opacity: 0.94;
+    }
+
+    80% {
+        opacity: 0.96;
+    }
+
+    90% {
+        opacity: 0.98;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 
