@@ -8,7 +8,7 @@ function loadEducationContent() {
                 <h4><u>Completed Modules</u></h4>
                     <li>Algorithmic Problem Solving - Java</li>
                     <li>Object-oriented Programming - Java</li>
-                    <li>Secure Computers and Networks - Identifying vulnerbilties</li>
+                    <li>Secure Computers and Networks - Identifying vulnerabilities</li>
                     <li>Systems Design and Databases - SQL & Program/System Design</li><br>
 
                 <h4><u>Currently Studying</u></h4>
