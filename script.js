@@ -1,4 +1,11 @@
-// Define content for education and experience
+
+const themeToggle = document.getElementById('theme-toggle');
+// Add event listener for click event
+themeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+});
+
+
 function loadEducationContent() {
     return `
         <h2>Education</h2><hr><br>
