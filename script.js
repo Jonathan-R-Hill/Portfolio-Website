@@ -12,7 +12,7 @@ function loadEducationContent() {
         <h2>Education</h2><hr><br>
         <ul>
             <h3>Teesside University</h3>
-                <p>Currently studying BSc (Hons) Computer Science - Sept 2023 - Presnt</p><br>
+                <p>Currently studying BSc (Hons) Computer Science - Sept 2023 - Present</p><br>
                 <h4><u>Completed Modules</u></h4>
                     <li>Algorithmic Problem Solving - Java</li>
                     <li>Object-oriented Programming - Java</li>
