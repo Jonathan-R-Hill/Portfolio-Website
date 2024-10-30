@@ -1,3 +1,1 @@
-WiP
-Github page link:
-https://jonathan-r-hill.github.io/Portfolio-Website/
+Old layout before re-creating project
