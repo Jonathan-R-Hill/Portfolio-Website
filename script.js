@@ -1,11 +1,12 @@
 
+// ---------- Theme Section ---------- //
 const themeToggle = document.getElementById('theme-toggle');
 // Add event listener for click event
 themeToggle.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
 });
 
-
+// ---------- Education & Experience section ---------- //
 function loadEducationContent() {
     return `
         <h2>Education</h2><hr><br>
@@ -82,3 +83,18 @@ document.getElementById("loadExperience").addEventListener("click", function () 
 document.getElementById("loadEducation").addEventListener("click", function () {
     document.getElementById("content").innerHTML = loadEducationContent();
 });
+
+
+// ---------- Projects section ---------- //
+
+function newProjectTile(title, imagePath, pText) {
+    return `
+        <div class="project secondary-project">
+            <h3>${title}</h3>
+            <img src="${imagePath}">
+            <p>
+                ${pText}
+            </p>
+        </div>
+    `
+}

@@ -1,11 +1,11 @@
-/* Basic Reset */
+/* ---------- Basic Reset ---------- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body styling */
+/* ---------- Body styling ---------- */
 body {
     background-image: url('./Images/Floral.png');
     background-size: cover;
@@ -18,7 +18,7 @@ body {
     color: black;
 }
 
-/* Theme Styles */
+/* ---------- Theme Styles ---------- */
 body.dark-mode {
     background-color: rgb(0, 0, 0);
     color: white;
@@ -34,7 +34,7 @@ body.dark-mode #content {
     background-color: rgb(0, 0, 0, 0.8);
 }
 
-/* Theme button */
+/* ---------- Theme button ---------- */
 #theme-toggle {
     padding: 10px 20px;
     font-size: 16px;
@@ -51,7 +51,7 @@ body.dark-mode #content {
     background-color: #197f1e;
 }
 
-/* Main content section */
+/* ---------- Main content section ---------- */
 main {
     padding-top: 50px;
     padding-left: 400px;
@@ -63,7 +63,7 @@ main {
     margin: 20px;
 }
 
-/* Top of Page Section layout */
+/* ---------- Top of Page Section layout ---------- */
 .topOfPageContent {
     display: flex;
     align-items: flex-start;
@@ -80,7 +80,7 @@ main {
     object-fit: cover;
 }
 
-/* Information Section styling */
+/* ---------- Information Section styling ---------- */
 #educationExperienceContent {
     margin-top: 10px;
 }
@@ -106,7 +106,7 @@ main {
     background-color: #197f1e;
 }
 
-/* Content container */
+/* ---------- Content container ---------- */
 #content {
     padding: 10px;
     border: 1px solid #ddd;
@@ -120,19 +120,62 @@ main {
     /* Removes default indentation */
 }
 
-/* Anchor tags */
+/* ---------- Anchor tags ---------- */
 a,
 a:visited,
 a:active {
     color: #386cdc;
 }
 
-/* Hover link color */
 a:hover {
     color: #006b30;
 }
 
-/* Phone/Tablet Stylings for usability */
+
+/* ---------- Projects Layout ---------- */
+#highlightedProjects {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    width: 80%;
+}
+
+/* ---------- Project Styling ---------- */
+.main-project {
+    background-color: #0073e6;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*  Smaller Projects Styling  */
+.secondary-project {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#highlightedProjects img {
+    width: 250px;
+    height: auto;
+}
+
+#highlightedProjects a,
+#highlightedProjects a:visited,
+#highlightedProjects a:active {
+    color: #e7fc02;
+}
+
+
+/* ---------- Phone/Tablet Stylings for usability ---------- */
 @media (max-width: 1450px) {
     main {
         padding-top: 10px;
@@ -144,5 +187,13 @@ a:hover {
         width: 100px;
         height: 100px;
         object-fit: cover;
+    }
+
+    #highlightedProjects {
+        grid-template-columns: 1fr;
+    }
+
+    .secondary-project {
+        margin-bottom: 15px;
     }
 }
