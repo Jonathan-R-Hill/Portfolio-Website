@@ -8,7 +8,7 @@ function loadEducationContent() {
                 <h4><u>Completed Modules</u></h4>
                     <li>Algorithmic Problem Solving - Java</li>
                     <li>Object-oriented Programming - Java</li>
-                    <li>Secure Computers and Networks - Identifying vulnerabilities</li>
+                    <li>Secure Computers and Networks - Identifying vulnerabilities & relevant security issues</li>
                     <li>Systems Design and Databases - SQL & Program/System Design</li><br>
 
                 <h4><u>Currently Studying</u></h4>
@@ -47,8 +47,8 @@ function loadExperienceContent() {
 
         <ul>
             <h4>Creating applications using <u>Java</u></h4>
-                <li><a href="https://github.com/Jonathan-R-Hill/Itinarary-ManagerGUI">creating applications both using console and GUI elements</a></li>
-                <li><a href="https://github.com/Jonathan-R-Hill/">Mobile applications for android</a></li>
+                <li><a href="https://github.com/Jonathan-R-Hill/Itinarary-ManagerGUI">Creating applications both using console and GUI elements</a></li>
+                <li><a href="https://github.com/Jonathan-R-Hill/Android-Language-App">Mobile applications for android</a></li>
         </ul><br>
 
         <ul>
