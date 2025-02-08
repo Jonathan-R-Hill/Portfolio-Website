@@ -14,18 +14,21 @@ function loadEducationContent() {
             <h3>Teesside University</h3>
                 <p>Currently studying BSc (Hons) Computer Science - Sept 2023 - Present</p><br>
                 <h4><u>Completed Modules</u></h4>
+                    <h4><u>Year 1</u></h4>
                     <li>Algorithmic Problem Solving - Java</li>
                     <li>Object-oriented Programming - Java</li>
                     <li>Secure Computers and Networks - Identifying vulnerabilities & relevant security issues</li>
                     <li>Systems Design and Databases - SQL & Program/System Design</li><br>
+                    <h4><u>Year 2</u></h4>
+                    <li>Relational and NoSQL Databases - SQL, SQLlite & MongoDB</li>
+                    <li>Web Apps and Services - C# .NET</li><br>
 
                 <h4><u>Currently Studying</u></h4>
-                    <li>Relational and NoSQL Databases - SQL, SQLlite & MongoDB</li>
-                    <li>Web Apps and Services - C#</li><br>
+                    <li>Artificial Intelligence</li>
+                    <li>Enterprise Project</li><br>
                 
                 <h4><u>Modules to be studied</u></h4>
-                    <li>Artificial Intelligence</li>
-                    <li>Enterprise Project</li>
+                    <h4><u>Year 3</u></h4>
                     <li>Applied Machine Learning</li>
                     <li>Cloud-native DevOps</li>
                     <li>Computing Project</li>
@@ -68,6 +71,17 @@ function loadExperienceContent() {
         <ul>
             <h4>Creating Web applications using <u>HTML, CSS & JS</u></h4>
                 <li><a href="https://github.com/Jonathan-R-Hill/Portfolio-Website">Creating a working web site with working navigation</a></li>
+        </ul><br>
+
+        <ul>
+        <h4>Creating cross-platform applications: <u>React-Native, ExpressJS, MongoDB & TS</u></h4>
+
+            <li> Currently working on making a Baby Diary tracker that incorporates an account-based system alongside various features, including:
+
+                <li>AI chat/lookup</li>
+                <li>Advice Pages</li>               
+                <li>Baby Profiles</li>              
+                <li>Chart Summaries</li> </li>
         </ul><br>
 
         <p>More projects available on my <a href="https://github.com/Jonathan-R-Hill/">Github</a><p>
